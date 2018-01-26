@@ -2,7 +2,7 @@ package models;
 
 import java.util.Random;
 
-public class Actor {
+public abstract class Actor {
   protected int hitPoints;
   protected int strength;
   protected String name;
