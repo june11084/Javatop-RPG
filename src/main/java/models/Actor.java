@@ -2,7 +2,7 @@ package models;
 
 import java.util.Random;
 
-public abstract class Actor { //declared abstract because there are no need to instantiate
+public class Actor {
   protected int hitPoints;
   protected int strength;
   protected String name;
@@ -17,7 +17,7 @@ public abstract class Actor { //declared abstract because there are no need to i
   }
 
   public String toString() {
-    return name + "  hit points: " + hitPoints + " strength: " + strength;
+    return name + " hit points: " + hitPoints + " strength: " + strength;
   }
 
   public void strike(Actor opponent) {
