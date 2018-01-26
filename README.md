@@ -2,7 +2,7 @@
 
 Option C - Independent Study
 
-This is an Epicodus friday project for Java that focuses on behavior testing, encapsulated classes, getter methods, using class inheritance, and proper usage of .gitignore.
+This is an Epicodus friday project for Java that focuses on behavior testing, encapsulated classes, getter methods,polymorphism using class inheritance, and proper usage of .gitignore.
 
 ## Getting Started
 
