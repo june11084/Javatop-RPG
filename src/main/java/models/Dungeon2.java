@@ -137,7 +137,7 @@ public class Dungeon2 extends Dungeon {
           }
 
         }
-      } else if (checkLeft()){
+      } else {
         System.out.println("Are you sure that you want to chose left? choose again (r or l)");
         if (checkLeft()) // if user inputs l or L
         {
@@ -228,9 +228,9 @@ public class Dungeon2 extends Dungeon {
 
         pause();
 
-        System.out.println("It's the very minotaur that killed your teammates a year ago");
+        System.out.println("It's a cake...");
 
-        System.out.println("You dash at the minotaur in anger");
+        System.out.println("You dash at the cake at full speed");
 
         pause();
 
@@ -247,7 +247,7 @@ public class Dungeon2 extends Dungeon {
           pause();
         }
 
-        System.out.println("You have defeated the minotaur, you look up and let out a sigh, and have a moment of silence for your teammates");
+        System.out.println("You have defeated the cake, it was a piece of cake");
 
         System.out.println("\n" + hero.toString() + "\t");
 
@@ -278,19 +278,9 @@ public class Dungeon2 extends Dungeon {
 
       } else {
         System.out.println("You spare the goblin, to thank you for your kindness," +
-                "\n the goblin tells you a secret path that leads to where your lover is and outside of the dungeon");
+                "\n the goblin tells you a secret path that leads to where your food is and outside of the dungeon");
         System.out.println("You successfully recovers your food and escapes");
       }
     }
-  }
-  protected boolean checkRight() //boolean check
-  {
-    String ans = scan.next();
-    return (ans.charAt(0) == 'r' || ans.charAt(0) == 'R');
-  }
-
-  protected boolean checkLeft() {
-    String ans = scan.next();
-    return (ans.charAt(0) == 'l' || ans.charAt(0) == 'L');
   }
 }
