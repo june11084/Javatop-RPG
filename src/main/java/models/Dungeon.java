@@ -13,7 +13,7 @@ public abstract class Dungeon { //declared abstract because there are no need to
   }
 
   protected void pause() {
-    System.out.print("\t(hit enter)"); //kind of like smashing continue button
+    System.out.print("\t(hit enter)"); //this is to pause the while loops.
     scan.nextLine();
   }
 
@@ -22,7 +22,7 @@ public abstract class Dungeon { //declared abstract because there are no need to
     return (ans.toString().equals("Yes") || ans.toString().equals("yes")||ans.toString().equals("y")||ans.toString().equals("Y"));
   }
 
-  public abstract void explore(Hero hero); //empty method to be customized in child classes
+  public abstract void explore(Hero hero); //empty method to have body filled in child classes(like interface)
 }
 
 
