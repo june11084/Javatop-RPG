@@ -22,4 +22,30 @@ public class Dungeon1Test {
     }
     assertEquals("yes", answer);
   }
+
+  @Test
+  public void checkRight() {
+    String answer="";
+    String input = "r";
+    ByteArrayInputStream in = new ByteArrayInputStream(input.getBytes());
+    System.setIn(in);
+    Dungeon dungeon = new Dungeon2();
+    if(dungeon.checkRight()){
+      answer = "right";
+    }
+    assertEquals("right", answer);
+  }
+
+  @Test
+  public void checkLeft() {
+    String answer="";
+    String input = "L";
+    ByteArrayInputStream in = new ByteArrayInputStream(input.getBytes());
+    System.setIn(in);
+    Dungeon dungeon = new Dungeon2();
+    if(dungeon.checkLeft()){
+      answer = "left";
+    }
+    assertEquals("left", answer);
+  }
 }
