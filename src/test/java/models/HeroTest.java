@@ -30,17 +30,22 @@ public class HeroTest {
 
   @Test
   public void increaseStrength() {
+    Hero hero = new Hero("hero",5,1);
+    hero.increaseStrength(10);
+    assertEquals(11,hero.strength);
   }
 
   @Test
   public void increaseHitPoints() {
-  }
-
-  @Test
-  public void getGold() {
+    Hero hero = new Hero("hero",5,1);
+    hero.increaseHitPoints(10);
+    assertEquals(15,hero.hitPoints);
   }
 
   @Test
   public void incGold() {
+    Hero hero = new Hero("hero",5,1);
+    hero.incGold(10);
+    assertEquals(10,hero.getGold());
   }
 }
